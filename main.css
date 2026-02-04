@@ -1,0 +1,40 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:beige;
+}
+
+nav {
+    display: inline-block;
+    background-color: lightblue;
+    border-bottom: 2px solid darkblue;
+}
+
+.crumbs ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.crumb {
+  display: inline-block;
+}
+
+.crumb a::after {
+  display: inline-block;
+  color: black;
+  content: ">";
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 3px;
+}
+
+.TA {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: rgb(255, 0, 0);
+  color: black;
+  border: 2px dotted black;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}

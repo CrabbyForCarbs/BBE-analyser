@@ -1,0 +1,49 @@
+body {
+  height: 97vh;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "header header" "nav main" "footer footer";
+  grid-template-columns: minmax(auto, 12em) 5fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+nav {
+  grid-area: nav;
+}
+
+article {
+  grid-area: main;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, footer {
+  background: lightgray;
+}
+
+nav {
+  border-right: 1px solid rgb(255, 0, 0);
+  border-left: 5px dotted rgb(0, 0, 255);
+  border-top: 3px dotted rgb(0, 255, 98);
+  border-bottom: 3px dotted rgb(255, 242, 0);
+}
+
+nav, article {
+  overflow-y: auto;
+}
+
+h1, nav, article, footer {
+  padding: 1rem;
+}
