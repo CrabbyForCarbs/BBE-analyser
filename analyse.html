@@ -106,32 +106,37 @@
                   </ul>
             </ol>
                </main> -->
-        <main style="padding:40px; max-width:1100px; margin:auto;">
-        <h1>Analysis Page</h1>
-        <h2>Course → Semester → Subject Navigator</h2>
 
-        <hr><br>
+        <main style="padding:40px; min-width:380px; margin:auto;">
+          <h1>Analysis Page</h1>
+          <h2>Course → Semester → Subject Navigator</h2>
 
-        <div style="display:flex; gap:30px; flex-wrap:wrap;">
+          <hr><br>
 
-        <div style="min-width:260px;">
-        <label>Course</label><br>
-        <select id="courseSel"></select><br><br>
+          <div style="display:flex; gap:30px; flex-wrap:wrap; justify-content:space-between; align-items:center">
 
-        <label>Semester</label><br>
-        <select id="semSel"></select><br><br>
+            <div style="min-width:260px;">
+              <label>Course</label><br>
+              <select id="courseSel"></select><br><br>
 
-        <label>Subject</label><br>
-        <select id="subSel"></select>
+              <label>Semester</label><br>
+              <select id="semSel"></select><br><br>
+
+              <label>Subject</label><br>
+              <select id="subSel"></select>
+            </div>
+            <div class="content-linked" style="border: 2px solid lime; padding: 5px; border-radius: 5px;">
+              <ul class="subnav1" style="display:flex; border: 2px double var(--text-color); justify-content: space-between; padding: 2px;margin-bottom: 10px;margin-right: 2px;margin-left: 2px; align-items: center; border-radius: 5px;font-size: 13px;">
+                <li class="subnav">Syllabus</li>
+                <li class="subnav">Analysis</li>
+                <li class="subnav">Reviews</li>
+                <li class="subnav">Questions & PDFs</li>
+              </ul> 
+              <div id="analyseContent" style="flex:1; min-width:350px; border:1px solid #000000; padding:20px; border-radius:8px;">
+                Select a subject to view content.
+              </div>
+            </div>
         </div>
-
-        <div id="analyseContent"
-        style="flex:1; min-width:280px; border:1px solid #000000; padding:20px; border-radius:8px;">
-        Select a subject to view content.
-        </div>
-
-        </div>
-
         </main>
             <script src="script.js"></script>
     <footer>

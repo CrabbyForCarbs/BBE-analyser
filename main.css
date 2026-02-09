@@ -433,6 +433,8 @@ footer .bottom-details .bottom_text{
   }
 }
 
+/*footer end*/
+
 :root{
   --body-color: #f0d785;
   --nav-color: #70c0be;
@@ -446,7 +448,37 @@ footer .bottom-details .bottom_text{
 Dark Blue: #3D5A80 (approximately)
 Dark Charcoal/Black: #2B2B2B
 */
-/**/
+
+/*subnav on analysis page*/
+
+
+.subnav1 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  border: 2px double var(--text-color);
+  border-radius: 5px;
+  margin: 0 auto 10px auto;
+  padding: 8px 5px;
+  width: fit-content;
+  max-width: 100%;
+  gap: 0; 
+}
+
+.subnav {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  padding: 0 15px;
+  position: relative; 
+}
+
+.subnav:not(:last-child) {
+  border-right: 1px solid var(--text-color); 
+}
 
 
 
