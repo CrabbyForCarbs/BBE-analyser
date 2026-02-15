@@ -11,8 +11,9 @@ body.dark {
   --nav-color: #2d4a4a;       
   --side-nav: #2B2B2B;
   --text-color: #E0E0E0;
-  --search-bar: #444444;
+  --search-bar: #080707;
   --search-text: #FFFFFF;
+  --pointer-text: #7308d6;
 }
 
 
@@ -408,6 +409,19 @@ footer .bottom-details .bottom_text{
   align-items: center;
 }
 
+.footlink{
+  text-decoration: underline;
+  text-decoration-color: var(--text-color)
+}
+
+a:link, a:visited {
+  color: black;
+  text-decoration: underline;
+}
+a:hover {
+  color: rgb(255, 255, 255);
+}   
+
 @media (max-width:1150px) {
   footer .content .link-boxes .box{
     width: calc(100% / 4 - 10px);
@@ -440,8 +454,9 @@ footer .bottom-details .bottom_text{
   --nav-color: #70c0be;
   --side-nav:#3D5A80;
   --text-color: black;
-  --search-bar: #ffffff;
+  --search-bar: #ffc67b;
   --search-text: #333333;
+  --pointer-text: #32d37d;
 }
 
 /* Color Palette:
@@ -526,3 +541,36 @@ main{
   align-items: center;
   justify-content: center;
 }
+
+/* Home page grid START */
+
+.hyat {
+  border: 5px double var(--text-color);
+  border-radius: 5px;
+  margin: 0px auto 0px auto;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-bottom: 5px;
+  width: fit-content;
+  background-color: var(--search-bar);
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.point{
+  text-decoration:underline;
+  text-shadow: var(--pointer-text) 2px 2px;
+}
+
+/* Home page grid END [color purple -> #7308d6] */
+/* About page grid START*/
+.semesterlist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    list-style-type:circle;
+    justify-content:space-between;
+}
+/* About page grid END*/
