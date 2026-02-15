@@ -25,11 +25,6 @@ modeToggle.addEventListener("click", () => {
     }
 });
 
-// search toggle
-searchToggle.addEventListener("click", () => {
-    searchToggle.classList.toggle("active");
-});
-
 // sidebar toggle
 sidebarOpen.addEventListener("click", () => {
     nav.classList.add("active");
