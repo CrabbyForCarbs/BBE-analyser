@@ -1,5 +1,6 @@
 # BBE-analyser
 BBE = B.A.(Hons) Business Economics , UOD = University of Delhi (#1 University of India, atleast officially)
+PS: I have taken up reviews from my seniors in 3rd & 4th year, they encourage me to go on. But to be practical about this, they have given me advice which I intend to implement.
 
 This course is really analytical, and in my opinion deserves more recognition. So I am building this project for that awareness for this course.
 
